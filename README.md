@@ -69,25 +69,26 @@ Program for logic gates and verify its truth table in quartus using Verilog prog
  Developed by:TAMILSELVI P
  RegisterNumber:25017628 
 
- module logic_gates (
-    input wire a,   
-    input wire b,    
+module logic_gates(
+    input  wire a,     // Input A
+    input  wire b,     // Input B
     output wire and_out,
     output wire or_out,
-    output wire not_out, 
+    output wire not_out,   // only on A
     output wire nand_out,
     output wire nor_out,
     output wire xor_out,
     output wire xnor_out
 );
 
-assign and_out = a & b;     
-assign or_out = a | b;       
-assign not_out = ~a;         
-assign nand_out = ~(a & b); 
-assign nor_out = ~(a | b);  
-assign xor_out = a ^ b;     
-assign xnor_out = ~(a ^ b);
+    assign and_out  = a & b;      // AND gate
+    assign or_out   = a | b;      // OR gate
+    assign not_out  = ~a;         // NOT gate (on input A)
+    assign nand_out = ~(a & b);   // NAND gate
+    assign nor_out  = ~(a | b);   // NOR gate
+    assign xor_out  = a ^ b;      // XOR gate
+    assign xnor_out = ~(a ^ b);   // XNOR gate
+
 endmodule
 **Logic symbol & Truthtable**
     <img width="1130" height="646" alt="Screenshot 2025-11-22 100810" src="https://github.com/user-attachments/assets/5ed6ee31-b9d6-4d8d-891b-17346189ec21" />
