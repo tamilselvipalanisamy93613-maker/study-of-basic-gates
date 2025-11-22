@@ -71,12 +71,19 @@ Program for logic gates and verify its truth table in quartus using Verilog prog
 
 module logic_gates(
     input  wire a,     // Input A
+    
     input  wire b,     // Input B
+    
     output wire and_out,
+    
     output wire or_out,
+    
     output wire not_out,   // only on A
+    
     output wire nand_out,
+    
     output wire nor_out,
+    
     output wire xor_out,
     
     output wire xnor_out
