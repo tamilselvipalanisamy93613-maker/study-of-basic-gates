@@ -78,6 +78,7 @@ module logic_gates(
     output wire nand_out,
     output wire nor_out,
     output wire xor_out,
+    
     output wire xnor_out
 );
 
