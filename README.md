@@ -70,6 +70,7 @@ Program for logic gates and verify its truth table in quartus using Verilog prog
  RegisterNumber:25017628 
 
 module logic_gates(
+
     input  wire a,     // Input A
     
     input  wire b,     // Input B
@@ -87,6 +88,7 @@ module logic_gates(
     output wire xor_out,
     
     output wire xnor_out
+    
 );
 
     assign and_out  = a & b;      // AND gate
@@ -98,6 +100,7 @@ module logic_gates(
     assign xnor_out = ~(a ^ b);   // XNOR gate
 
 endmodule
+
 **Logic symbol & Truthtable**
     <img width="1130" height="646" alt="Screenshot 2025-11-22 100810" src="https://github.com/user-attachments/assets/5ed6ee31-b9d6-4d8d-891b-17346189ec21" />
 
